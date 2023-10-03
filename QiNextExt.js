@@ -38,9 +38,9 @@ class QiNetExt{
 			color2:"#6495ED",
 			blocks:[
 				{
-                    opcode: "OpenPost",
+                    opcode: "Open",
                     blockType: "command",
-                    text: this.formatMessage("QiNetExt.OpenPost"),
+                    text: this.formatMessage("QiNetExt.Open"),
                     arguments: {
 						type: {
                             type: "string",
