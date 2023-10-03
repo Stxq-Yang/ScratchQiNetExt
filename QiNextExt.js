@@ -144,6 +144,26 @@ class QiNetExt {
 	}
 }
 
-const QiNetExtInstance = new QiNetExt();
-
-export default QiNetExtInstance;
+window.tempExt = {
+    Extension: QiNetExt,
+    info: {
+        name: "QiNetExt.name",
+        description: "QiNetExt.descp",
+        extensionId: qi_net_extension_id,
+        iconURL: qi_net_extension_icon,
+        insetIconURL: qi_net_extension_picture,
+        featured: true,
+        disabled: false,
+        collaborator: "Qi @ CCW"
+    },
+    l10n: {
+        "zh-cn": {
+            "QiNetExt.name": "[beta]Qi网络库",
+            "QiNetExt.descp": "连接网络"
+        },
+        en: {
+            "QiNetExt.name": "[beta]QiNetLib",
+            "QiNetExt.descp": "Connect Internet"
+        }
+    }
+};
